@@ -1,0 +1,9 @@
+{
+  "**/*.ts": [
+    "eslint --fix --max-warnings=0 --color",
+    "prettier --write"
+  ],
+  "**/*.yml": [
+    "npm run lint:openapi"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@ddd-master/result",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "version": "0.0.1",
+  "private": false,
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "build:dev": "tsc --build tsconfig.json --watch",
+    "build:clean": "rimraf dist",
+    "lint": "eslint . --ext .ts --cache --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
