@@ -7,15 +7,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Setup checkout actions
         uses: actions/checkout@v3
-
 
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
+      - name: Install turbo
+        run: npm i turbo-linux-64
 
       - name: Install dependencies
         run: npm ci

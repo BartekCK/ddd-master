@@ -2,7 +2,7 @@
   "name": "@ddd-master/command-bus",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "exports": {
     ".": "./dist/src/index.js"
