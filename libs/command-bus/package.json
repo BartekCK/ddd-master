@@ -16,9 +16,7 @@
     "bump:patch": "npm version patch --git-tag-version false",
     "new:package": "npm publish --access public"
   },
-  "dependencies": {
-    "@ddd-master/result": "*"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "homepage": "https://github.com/BartekCK/ddd-master/tree/master/libs/command-bus",
   "repository": {

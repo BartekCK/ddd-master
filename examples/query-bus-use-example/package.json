@@ -1,0 +1,25 @@
+{
+  "name": "@example/query-bus",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
+  "scripts": {
+    "start:dev": "nodemon src/app.ts",
+    "build:dev": "tsc --build tsconfig.json --watch",
+    "build:clean": "rimraf dist",
+    "lint": "eslint . --ext .ts --cache --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "dependencies": {
+    "@ddd-master/query-bus": "*"
+  },
+  "devDependencies": {
+  },
+  "author": {
+    "email": "bkotarski1@gmail.com"
+  }
+}
