@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install turbo
         run: npm i turbo-linux-64
@@ -25,7 +26,7 @@ jobs:
 
       - name: Build all libs
         run: npm run build:all
-        
+
       - name: Publish all libs
         run: npm run publish:all
         env:
