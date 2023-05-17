@@ -1,7 +1,5 @@
-import { Result } from '@ddd-master/result';
-
 import { IQuery } from './query.interface';
 
-export interface IQueryHandler<Query extends IQuery, R extends Result | Promise<Result>> {
+export interface IQueryHandler<Query extends IQuery, R> {
   handle: (query: Query) => R;
 }

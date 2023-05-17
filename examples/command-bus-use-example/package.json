@@ -1,13 +1,14 @@
 {
-  "name": "@ddd-master/command-bus",
+  "name": "@example/command-bus",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "version": "0.0.11",
-  "private": false,
+  "private": true,
   "exports": {
     ".": "./dist/src/index.js"
   },
   "scripts": {
+    "start:dev": "nodemon src/app.ts",
     "build": "tsc --build tsconfig.build.json",
     "build:dev": "tsc --build tsconfig.json --watch",
     "build:clean": "rimraf dist",
@@ -16,15 +17,11 @@
     "bump:patch": "npm version patch --git-tag-version false",
     "new:package": "npm publish --access public"
   },
-  "dependencies": {},
-  "devDependencies": {},
-  "homepage": "https://github.com/BartekCK/ddd-master/tree/master/libs/command-bus",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BartekCK/ddd-master.git",
-    "directory": "libs/command-bus"
+  "dependencies": {
+    "@ddd-master/command-bus": "*"
   },
-  "description": "Command bus implementation",
+  "devDependencies": {
+  },
   "author": {
     "email": "bkotarski1@gmail.com"
   }

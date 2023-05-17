@@ -1,3 +1,1 @@
-export interface IQuery {
-  traceId: string;
-}
+export type IQuery = object;

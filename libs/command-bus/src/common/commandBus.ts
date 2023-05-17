@@ -1,13 +1,11 @@
-import { Result } from '@ddd-master/result';
-
 import { ICommand } from './command.interface';
 import { ICommandBus } from './commandBus.interface';
 import { ICommandHandler } from './commandHandler.interface';
 
 export class CommandBus implements ICommandBus {
-  private commandHandlers: Map<string, ICommandHandler<ICommand, Result | Promise<Result>>> = new Map();
+  private commandHandlers: Map<string, ICommandHandler<ICommand, unknown>> = new Map();
 
-  public execute<Command extends ICommand, R extends Result | Promise<Result>>(command: Command): R {
+  public execute<Command extends ICommand, R>(command: Command): R {
     const handler = this.findCommandHandler(command);
 
     if (!handler) {
@@ -21,7 +19,7 @@ export class CommandBus implements ICommandBus {
     return <R>handler.handle(command);
   }
 
-  private findCommandHandler(command: ICommand): ICommandHandler<ICommand, Result | Promise<Result>> | null {
+  private findCommandHandler(command: ICommand): ICommandHandler<ICommand, unknown> | null {
     const className = command.constructor.name;
 
     const handler = this.commandHandlers.get(className);
@@ -31,7 +29,7 @@ export class CommandBus implements ICommandBus {
 
   public register(
     Command: { new (...args: never[]): ICommand },
-    commandHandler: ICommandHandler<ICommand, Promise<Result>>,
+    commandHandler: ICommandHandler<ICommand, unknown>,
   ): void {
     this.commandHandlers.set(Command.name, commandHandler);
   }

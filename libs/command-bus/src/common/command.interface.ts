@@ -1,3 +1,1 @@
-export interface ICommand {
-  traceId: string;
-}
+export type ICommand = object;
