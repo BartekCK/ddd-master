@@ -11,10 +11,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
       - name: Setup checkout actions
         uses: actions/checkout@v3
