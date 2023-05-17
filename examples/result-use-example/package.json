@@ -1,5 +1,5 @@
 {
-  "name": "@example/command-bus",
+  "name": "@example/result",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "version": "1.0.0",
@@ -15,7 +15,7 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
-    "@ddd-master/command-bus": "*"
+    "@ddd-master/result": "*"
   },
   "devDependencies": {
   },

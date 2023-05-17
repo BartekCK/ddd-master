@@ -2,20 +2,17 @@
   "name": "@example/query-bus",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
-  "version": "0.0.11",
+  "version": "1.0.0",
   "private": true,
   "exports": {
     ".": "./dist/src/index.js"
   },
   "scripts": {
     "start:dev": "nodemon src/app.ts",
-    "build": "tsc --build tsconfig.build.json",
     "build:dev": "tsc --build tsconfig.json --watch",
     "build:clean": "rimraf dist",
     "lint": "eslint . --ext .ts --cache --max-warnings 0",
-    "lint:fix": "npm run lint -- --fix",
-    "bump:patch": "npm version patch --git-tag-version false",
-    "new:package": "npm publish --access public"
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "@ddd-master/query-bus": "*"
