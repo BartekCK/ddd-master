@@ -31,6 +31,14 @@
     "test": {
       "dependsOn": [],
       "cache": true
+    },
+    "new:package": {
+      "inputs": ["dist/**"],
+      "cache": false
+    },
+    "bump:patch": {
+      "dependsOn": [],
+      "cache": false
     }
   }
 }

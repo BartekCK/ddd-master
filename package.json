@@ -7,7 +7,9 @@
     "build:clean": "turbo run build:clean",
     "build:dev": "turbo run build:dev",
     "lint": "turbo run lint",
-    "lint:fix": "turbo run lint:fix"
+    "lint:fix": "turbo run lint:fix",
+    "publish:all": "turbo run new:package",
+    "bump:patch:all": "npm version patch --git-tag-version false & turbo run bump:patch"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.3",

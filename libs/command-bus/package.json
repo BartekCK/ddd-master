@@ -12,11 +12,22 @@
     "build:dev": "tsc --build tsconfig.json --watch",
     "build:clean": "rimraf dist",
     "lint": "eslint . --ext .ts --cache --max-warnings 0",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "bump:patch": "npm version patch --git-tag-version false",
+    "new:package": "npm publish --access public"
   },
   "dependencies": {
     "@ddd-master/result": "*"
   },
-  "devDependencies": {
+  "devDependencies": {},
+  "homepage": "https://github.com/BartekCK/ddd-master/tree/master/libs/command-bus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BartekCK/ddd-master.git",
+    "directory": "libs/command-bus"
+  },
+  "description": "Command bus implementation",
+  "author": {
+    "email": "bkotarski1@gmail.com"
   }
 }
