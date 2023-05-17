@@ -1,6 +1,6 @@
 {
   "name": "@ddd-master/main",
-  "version": "0.0.4",
+  "version": "0.0.10",
   "private": true,
   "scripts": {
     "build:all": "turbo build:clean && turbo run build",
@@ -8,8 +8,8 @@
     "build:dev": "turbo run build:dev",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
-    "publish:all": "turbo run new:package",
-    "bump:patch:all": "npm version patch --git-tag-version false & turbo run bump:patch"
+    "publish:all": "turbo run new:package --concurrency=1",
+    "bump:patch:all": "npm version patch --git-tag-version false && turbo run bump:patch --concurrency=1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.3",
