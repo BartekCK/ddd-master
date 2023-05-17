@@ -2,7 +2,7 @@
   "name": "@ddd-master/result",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "private": false,
   "exports": {
     ".": "./dist/src/index.js"
@@ -12,10 +12,20 @@
     "build:dev": "tsc --build tsconfig.json --watch",
     "build:clean": "rimraf dist",
     "lint": "eslint . --ext .ts --cache --max-warnings 0",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "bump:patch": "npm version patch --git-tag-version false",
+    "new:package": "npm publish --access public"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/BartekCK/ddd-master/tree/master/libs/result",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BartekCK/ddd-master.git",
+    "directory": "libs/result"
   },
-  "devDependencies": {
+  "description": "DDD Result pattern implementation",
+  "author": {
+    "email": "bkotarski1@gmail.com"
   }
 }
