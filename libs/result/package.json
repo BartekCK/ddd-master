@@ -24,6 +24,7 @@
     "url": "https://github.com/BartekCK/ddd-master.git",
     "directory": "libs/result"
   },
+  "license": "MIT",
   "description": "DDD Result pattern implementation",
   "author": {
     "email": "bkotarski1@gmail.com"
