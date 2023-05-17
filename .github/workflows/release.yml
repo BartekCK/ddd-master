@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: Install turbo
+        run: npm i turbo-linux-64
+
       - name: Install dependencies
         run: npm ci
 
