@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  build:
+  publish-npm:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,21 +25,7 @@ jobs:
 
       - name: Build all libs
         run: npm run build:all
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-
-      - name: Setup checkout actions
-        uses: actions/checkout@v3
-
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org/
-
+        
       - name: Publish all libs
         run: npm run publish:all
         env:
