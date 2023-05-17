@@ -26,6 +26,7 @@
     "url": "https://github.com/BartekCK/ddd-master.git",
     "directory": "libs/query-bus"
   },
+  "license": "MIT",
   "description": "Query bus implementation",
   "author": {
     "email": "bkotarski1@gmail.com"
