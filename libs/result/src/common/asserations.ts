@@ -1,5 +1,5 @@
-import { FailureResult } from '../common/failureResult';
-import { SuccessResult } from '../common/successResult';
+import { FailureResult } from './failureResult';
+import { SuccessResult } from './successResult';
 
 export function assertResultSuccess<T = unknown>(
   result: FailureResult | SuccessResult<T>,

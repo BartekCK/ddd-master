@@ -22,3 +22,12 @@ jobs:
 
       - name: Install all dependencies
         run: npm ci
+
+      - name: Build all libs
+        run: npm run build:all
+
+      - name: Run all tests
+        run: npm run test
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3

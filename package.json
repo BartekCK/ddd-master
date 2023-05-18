@@ -3,6 +3,7 @@
   "version": "0.0.12",
   "private": true,
   "scripts": {
+    "test": "turbo run test",
     "build:all": "turbo build:clean && turbo run build",
     "build:clean": "turbo run build:clean",
     "build:dev": "turbo run build:dev",
