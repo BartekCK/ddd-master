@@ -5,7 +5,7 @@ const config: Config = {
   preset: 'ts-jest',
   testPathIgnorePatterns: ['/node_modules/'],
   testMatch: ['**/*.test.ts'],
-  collectCoverage: false,
+  collectCoverage: true,
   passWithNoTests: true,
 };
 
