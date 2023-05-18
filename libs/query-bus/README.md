@@ -1,5 +1,6 @@
 # @ddd-master/query-bus package
 
+[![codecov](https://codecov.io/github/BartekCK/ddd-master/branch/master/graph/badge.svg?token=O1NDI5H17P)](https://codecov.io/github/BartekCK/ddd-master)
 [![npm](https://img.shields.io/npm/v/@ddd-master/query-bus?color=blue&label=%40ddd-master%2Fquery-bus)](https://www.npmjs.com/package/@ddd-master/query-bus)
 
 The `@ddd-master/query-bus` package is a TypeScript library that provides an implementation of the query bus pattern for Domain-Driven Design (DDD) applications. It enables you to execute queries and retrieve query results in a centralized and efficient manner.

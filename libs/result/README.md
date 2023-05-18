@@ -1,5 +1,6 @@
 # @ddd-master/result package
 
+[![codecov](https://codecov.io/github/BartekCK/ddd-master/branch/master/graph/badge.svg?token=O1NDI5H17P)](https://codecov.io/github/BartekCK/ddd-master)
 [![npm](https://img.shields.io/npm/v/@ddd-master/result?color=blue&label=%40ddd-master%2Fresult)](https://www.npmjs.com/package/@ddd-master/result)
 
 The `@ddd-master/result` library is a TypeScript package that provides a set of classes and types for handling success and failure results in Domain-Driven Design (DDD) applications. It enables you to encapsulate and communicate the outcome of operations in a structured and type-safe manner.

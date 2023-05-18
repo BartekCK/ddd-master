@@ -1,5 +1,6 @@
 # @ddd-master/command-bus package
 
+[![codecov](https://codecov.io/github/BartekCK/ddd-master/branch/master/graph/badge.svg?token=O1NDI5H17P)](https://codecov.io/github/BartekCK/ddd-master)
 [![npm](https://img.shields.io/npm/v/@ddd-master/command-bus?color=blue&label=%40ddd-master%2Fcommand-bus)](https://www.npmjs.com/package/@ddd-master/command-bus)
 
 The `@ddd-master/command-bus` package is a TypeScript library that provides an implementation of the command bus pattern for Domain-Driven Design (DDD) applications. It allows you to execute commands and perform actions in a centralized and decoupled manner.
