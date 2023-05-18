@@ -17,7 +17,6 @@
     "new:package": "npm publish --access public"
   },
   "dependencies": {
-    "@ddd-master/result": "*"
   },
   "devDependencies": {},
   "homepage": "https://github.com/BartekCK/ddd-master/tree/master/libs/query-bus",
@@ -30,5 +29,6 @@
   "description": "Query bus implementation",
   "author": {
     "email": "bkotarski1@gmail.com"
-  }
+  },
+  "keywords": ["DDD", "query-bus", "cqrs", "query","cqrs"]
 }

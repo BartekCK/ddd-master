@@ -28,5 +28,10 @@
   "description": "DDD Result pattern implementation",
   "author": {
     "email": "bkotarski1@gmail.com"
-  }
+  },
+  "keywords": [
+    "DDD",
+    "Result",
+    "pattern"
+  ]
 }

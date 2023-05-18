@@ -28,5 +28,6 @@
   "description": "Command bus implementation",
   "author": {
     "email": "bkotarski1@gmail.com"
-  }
+  },
+  "keywords": ["DDD", "command-bus", "cqrs", "command","cqrs"]
 }
