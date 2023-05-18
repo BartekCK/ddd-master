@@ -1,6 +1,6 @@
 {
   "name": "@ddd-master/main",
-  "version": "0.0.12",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "test": "turbo run test",
