@@ -39,6 +39,10 @@
     "bump:patch": {
       "dependsOn": [],
       "cache": false
+    },
+    "test": {
+      "dependsOn": [],
+      "cache": true
     }
   }
 }

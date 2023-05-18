@@ -8,6 +8,7 @@
     ".": "./dist/src/index.js"
   },
   "scripts": {
+    "test": "jest --runInBand --config jest.config.ts",
     "build": "tsc --build tsconfig.build.json",
     "build:dev": "tsc --build tsconfig.json --watch",
     "build:clean": "rimraf dist",

@@ -6,3 +6,5 @@ export * from './common/invalidPayloadFailure';
 export * from './common/invalidDomainEventFailure';
 export * from './common/databaseFailure';
 export * from './common/concurrencyFailure';
+
+export * from './common/asserations';
