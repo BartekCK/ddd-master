@@ -1,4 +1,5 @@
 # @ddd-master/* root repository
+[![codecov](https://codecov.io/github/BartekCK/ddd-master/branch/master/graph/badge.svg?token=O1NDI5H17P)](https://codecov.io/github/BartekCK/ddd-master)
 
 [![npm](https://img.shields.io/npm/v/@ddd-master/result?color=blue&label=%40ddd-master%2Fresult)](https://www.npmjs.com/package/@ddd-master/result)
 [![npm](https://img.shields.io/npm/v/@ddd-master/command-bus?color=blue&label=%40ddd-master%2Fcommand-bus)](https://www.npmjs.com/package/@ddd-master/command-bus)
